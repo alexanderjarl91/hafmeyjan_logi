@@ -2,6 +2,27 @@ footer
     margin-top: 2rem
     text-align: center
     background-color: #FAFAFA
+    .hlekkir
+        display: none
+
+    @media only screen and (min-width: 768px)
+        display: flex
+        justify-content: space-around
+        .hlekkir
+            display: block
+
+            li
+                text-align: left
+                font-family: Montserrat
+                font-style: normal
+                font-weight: normal
+                font-size: 16px
+                line-height: 20px
+                letter-spacing: 0.12em
+                padding: 8px
+                margin-left: 30px
+                &:hover
+                    color: $secondary-color
 
     div
         padding: 40px 0px

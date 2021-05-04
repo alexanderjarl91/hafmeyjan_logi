@@ -5,6 +5,8 @@ $secondary-color: #FFBA3A
 //DESKTOP NAVBAR
 .logo
     width: 150px
+    @media only screen and (min-width: 768px)
+        width: 250px
 .navbar
     display: flex
     justify-content: space-around
@@ -21,7 +23,7 @@ $secondary-color: #FFBA3A
             font-size: 20px
             color: white
             margin-right: 2rem
-            margin-top: 10px
+            margin-top: 16px
             &:hover
                 color: $secondary-color
 
@@ -53,13 +55,13 @@ $secondary-color: #FFBA3A
     background-color: $main-color
 
 .hamburger.is-active:after
-    transform: rotate(45deg) translate(-8px,-5px)
+    transform: rotate(45deg) translate(-7px,-4px)
     background-color: $main-color
 
 .hamburger.is-active .bar
     opacity: 0
 
-    // MOBILE MENU
+// MOBILE MENU
 .mobile__nav
     position: fixed
     top: 0
@@ -71,6 +73,7 @@ $secondary-color: #FFBA3A
     padding-top: 30px
     z-index: 98
     transition: 0.4s
+    overflow: hidden
     img
         margin-bottom: 8rem
     a
@@ -97,3 +100,7 @@ $secondary-color: #FFBA3A
 
 .mobile__nav.is-active
     left: 0
+
+.dark
+    background-color: $main-color
+    color: $main-color

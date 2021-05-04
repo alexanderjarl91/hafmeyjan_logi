@@ -2,6 +2,7 @@
 @import umokkur
 @import reset
 @import navbar
+@import navbar_dark
 @import footer
 
 // IMPORTING FONT
@@ -22,8 +23,10 @@ header
     margin: 0 auto
     padding-top: 20px
     max-width: 295px
-    margin-left: 3rem
     margin-top: 10rem
+    @media only screen and (min-width: 768px)
+        max-width: 500px
+
     h1
         font-family: Montserrat
         font-style: normal
@@ -31,6 +34,12 @@ header
         font-size: 36.9224px
         line-height: 45px
         color: #FFFFFF
+        @media only screen and (min-width: 768px)
+            margin-top: 2rem
+            font-size: 60px
+            line-height: 73px
+    a
+        text-align: center
     button
         background-color: $secondary-color
         font-family: Montserrat
@@ -43,8 +52,13 @@ header
         margin: 0 auto
         padding: 20px
         border-radius: 8px
-        margin-top: 4rem
+        margin-top: 2rem
         transition: 0.2s
+        @media only screen and (min-width: 768px)
+            font-size: 18px
+            padding: 30px
+            width: 250px
+
         &:hover
             transform: scale(1.01)
 
@@ -67,6 +81,8 @@ header
         width: 100%
 
 .left__container
+    margin: 0 8rem
+
     h1
         font-family: Montserrat
         font-style: normal

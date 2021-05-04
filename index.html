@@ -11,19 +11,28 @@
     <!-- HEADER -->
     <header>
       <!-- NAVBAR -->
-
-      <!-- DESKTOP NAVBAR -->
       <div class="navbar">
-        <p>logo</p>
-        <ul class="nav__links">
-          <li><a href="/vorur"> VÖRUR </a></li>
-          <li><a href="/umokkur">UM OKKUR</a></li>
-          <li><a href="/hafasamband">HAFA SAMBAND</a></li>
-        </ul>
         <div class="hamburger">
           <div class="bar"></div>
         </div>
+        <img class="logo" src="images/logo.svg" alt="" />
+        <ul class="nav__links">
+          <li><a href="/vorur"> VÖRUR </a></li>
+          <li><a href="/umokkur.html">UM OKKUR</a></li>
+          <li><a href="/hafasamband">HAFA SAMBAND</a></li>
+        </ul>
       </div>
+
+      <nav class="mobile__nav">
+        <a href="">
+          <img class="logo" src="images/logo_dark.svg" alt="" />
+        </a>
+        <a href="/">FORSÍÐA</a>
+        <a href="/vorur">VÖRUR</a>
+        <a href="/umokkur.html">UM OKKUR</a>
+        <a href="/hafasamband">HAFA SAMBAND</a>
+        <p>Hafmeyjan ehf 2021</p>
+      </nav>
 
       <!-- HEADER CONTENT -->
       <div class="header__content">
@@ -32,40 +41,52 @@
       </div>
     </header>
 
-    <nav class="mobile__nav">
-      <a href="/">FORSÍÐA</a>
-      <a href="/vorur">VÖRUR</a>
-      <a href="/umokkur">UM OKKUR</a>
-      <a href="/hafasamband">HAFA SAMBAND</a>
-    </nav>
-
     <!-- PAGE CONTENT -->
     <div class="content">
       <div class="service">
         <div class="left__container">
-          <h1>ÞJÓNUSTAN</h1>
+          <h1>Þjónustan</h1>
           <p>
             Hafmeyjan ehf. flytur inn hinar ýmsu tegundir gourmet matvara þar
             sem áhersla er lögð á val besta fáanlegs hráefnis hverju sinni.
           </p>
         </div>
-        <p>PIZZA IMG</p>
+        <img src="images/mozzarella.svg" alt="" />
       </div>
       <div class="service">
         <div class="left__container">
-          <h1>ÞJÓNUSTAN</h1>
+          <h1>Hvað gerum við?</h1>
           <p>
             Hafmeyjan ehf. flytur inn hinar ýmsu tegundir gourmet matvara þar
             sem áhersla er lögð á val besta fáanlegs hráefnis hverju sinni.
           </p>
         </div>
-        <p>PIZZA IMG</p>
+        <img src="images/pizza.svg" alt="" />
       </div>
     </div>
 
     <!-- OUR CUSTOMERS -->
-    <div></div>
+    <div class="customers">
+      <h1>Samstarfsaðilar</h1>
+      <img src="images/store_logos/hagkaup.svg" alt="" />
+      <img src="images/store_logos/iceland.svg" alt="" />
+      <img src="images/store_logos/ekran.svg" alt="" />
+      <img src="images/store_logos/bonus.svg" alt="" />
+    </div>
     <!-- FOOTER -->
+    <footer>
+      <div>
+        <h1>OPNUNARTÍMI</h1>
+        <p>Mánud. - Föstud. frá 8.00 - 16.00</p>
+      </div>
+
+      <div>
+        <h1>HAFA SAMBAND</h1>
+        <p>S: 8966099</p>
+        <p>gudmundur@hafmeyjan.is</p>
+        <p>Akralind 9, 203 Kópavogur</p>
+      </div>
+    </footer>
     <script src="scripts/hamburger.js"></script>
   </body>
 </html>

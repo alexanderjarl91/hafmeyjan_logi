@@ -15,6 +15,7 @@ header
     background-image: url(/hero.jpg)
     height: 100vh
     width: 100vw
+    background-repeat: no-repeat
 
 //LANDING PAGE
 .header__content
@@ -26,7 +27,6 @@ header
     margin-top: 10rem
     @media only screen and (min-width: 768px)
         max-width: 500px
-
     h1
         font-family: Montserrat
         font-style: normal
@@ -61,28 +61,25 @@ header
 
         &:hover
             transform: scale(1.01)
-
-.content
-    display: flex
-    flex-direction: column
-    font: Montserrat
-    font-size: 18px
-    letter-spacing: 0.5px
-    margin-top: 4rem
+.lina
+    position: absolute
+    bottom: 0
+    margin-left: 9rem
+    margin-bottom: -10px
+    height: 30px
+    width: 8px
+    color: white
+    background-color: $secondary-color
+    @media only screen and (min-width: 400px)
+        display: none
 
 .service
     display: flex
     flex-direction: column
-    margin: 0 auto
-    text-align: center
     justify-content: center
+    text-align: center
     margin-bottom: 5rem
-    img
-        width: 100%
-
-.left__container
-    margin: 0 8rem
-
+    height: 300px
     h1
         font-family: Montserrat
         font-style: normal
@@ -90,12 +87,67 @@ header
         font-size: 35px
         line-height: 43px
         color: $main-color
-        padding-bottom: 40px
+        margin-top: 5rem
     p
-        text-align: left
-        line-height: 34px
-        padding-bottom: 40px
+        font-family: Montserrat
+        font-style: normal
+        font-weight: normal
+        font-size: 16px
+        line-height: 26px
+        margin: 2rem
+        letter-spacing: 0.05em
+        width: 300px
+        margin: 0 auto
+        margin-top: 1rem
+        @media only screen and (min-width: 768px)
+            width: 800px
 
+.list
+    background-image: url(/images/pizza_background.svg)
+    background-repeat: no-repeat
+    background-size: 100%
+    @media only screen and (min-width: 768px)
+        background-image: url(/images/pizza_background_horizontal.svg)
+        background-repeat: no-repeat
+        background-size: 2200px
+
+        margin: 0 auto
+        @media only screen and (min-width: 768px)
+            display: flex
+            justify-content: space-around
+    div
+        display: flex
+        flex-direction: column
+        justify-content: center
+        text-align: center
+        color: $main-color
+        width: 90%
+        margin: 0 auto
+        padding: 4rem 0
+        img
+            margin-top: 5rem
+            padding: 10px
+            width: 100px
+            margin: 0 auto
+            margin-bottom: 1rem
+        h1
+            font-family: Montserrat
+            font-style: normal
+            font-weight: bold
+            font-size: 35px
+            line-height: 53px
+            text-align: center
+            padding-bottom: 10px
+        p
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 24px
+            letter-spacing: 0.05em
+            color: $main-color
+            width: 300px
+            margin: 0 auto
 //CUSTOMERS
 .customers
     display: flex
@@ -113,6 +165,7 @@ header
         line-height: 43px
         color: $main-color
         padding-bottom: 40px
+        margin-top: 5rem
 
     img
-        width: 250px
+        width: 150px

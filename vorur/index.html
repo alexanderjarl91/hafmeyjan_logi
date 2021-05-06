@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hafmeyjan | Vörur</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <div class="navbar_dark">
+      <div class="hamburger_dark">
+        <div class="bar_dark"></div>
+      </div>
+      <a href="/">
+        <img class="logo" src="../images/logo_dark.svg" alt="" />
+      </a>
+      <div></div>
+      <ul class="nav__links">
+        <li><a href="/vorur">VÖRUR</a></li>
+        <li><a href="/umokkur">UM OKKUR</a></li>
+        <li><a href="/hafasamband">HAFA SAMBAND</a></li>
+      </ul>
+    </div>
+
+    <nav class="mobile__nav">
+      <a href="">
+        <img class="logo" src="../images/logo_dark.svg" alt="" />
+      </a>
+      <a href="/">FORSÍÐA</a>
+      <a href="/vorur">VÖRUR</a>
+      <a href="/umokkur">UM OKKUR</a>
+      <a href="/hafasamband">HAFA SAMBAND</a>
+      <p>Hafmeyjan ehf 2021</p>
+    </nav>
+
+    <!-- MENU -->
+    <div class="menu">
+      <h1 class="titill">VÖRUR</h1>
+      <div class="menu__btns">
+        <button autofocus onclick="renderAvocadoProducts()">Avocado</button>
+        <button onclick="renderFrozenProducts()">Frystivörur</button>
+        <button onclick="renderStockProducts()">Kraftar & sósur</button>
+        <button onclick="renderOtherProducts()">Annað</button>
+      </div>
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products">
+      <!-- FILLED WITH JAVASCRIPT -->
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="hlekkir">
+        <h1>HLEKKIR</h1>
+        <ul>
+          <li><a href="/vorur">Vörur</a></li>
+          <li><a href="/umokkur.html">Um okkur</a></li>
+          <li><a href="/hafasamband">Hafa samband</a></li>
+        </ul>
+      </div>
+
+      <div class="opnunartimi">
+        <h1>OPNUNARTÍMI</h1>
+        <p>Virka daga</p>
+        <p>08:30 - 16:00</p>
+      </div>
+
+      <div>
+        <h1>HAFA SAMBAND</h1>
+        <ul>
+          <li>
+            <img src="../images/phone_icon.svg" alt="" /><a
+              href="tel:+3548966099"
+              >8966099</a
+            >
+          </li>
+          <li>
+            <img src="../images/mail_icon.svg" alt="" /><a
+              href="mailto:gudmundur@hafmeyjan.is"
+              >gudmundur@hafmeyjan.is</a
+            >
+          </li>
+          <li>
+            <img src="../images/location_icon.svg" alt="" /><a href=""
+              >Akralind 9, 201 Kópavogur</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="../scripts/products.js"></script>
+    <script src="../scripts/hamburger_dark.js"></script>
+  </body>
+</html>

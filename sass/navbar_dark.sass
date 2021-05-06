@@ -8,7 +8,7 @@ $secondary-color: #FFBA3A
     margin-left: -1rem
     @media only screen and (min-width: 950px)
         width: 250px
-.navbar
+.navbar_dark
     display: flex
     justify-content: space-around
     padding-top: 40px
@@ -22,59 +22,58 @@ $secondary-color: #FFBA3A
             font-style: normal
             font-weight: 500
             font-size: 20px
-            color: white
+            color: $main-color
             margin-right: 2rem
             margin-top: 16px
             &:hover
                 color: $secondary-color
 
-    .hamburger
+    .hamburger_dark
         display: block
         width: 35px
         cursor: pointer
         height: 35px
         appearance: none
-        background: none
         outline: none
         border: none
         z-index: 100
         @media only screen and (min-width: 950px)
             display: none
 
-.hamburger .bar, .hamburger:after, .hamburger:before
+.hamburger_dark .bar_dark, .hamburger_dark:after, .hamburger_dark:before
     content: ''
     display: block
     width: 90%
     height: 3px
-    background-color: white
+    background-color: $main-color
     margin: 6px 0px
     transition: 0.4s
     border-radius: 50px
 
-.hamburger.is-active:before
+.hamburger_dark.is-active:before
     transform: rotate(-45deg) translate(-9px, 6px)
     background-color: $main-color
 
-.hamburger.is-active:after
+.hamburger_dark.is-active:after
     transform: rotate(45deg) translate(-7px,-4px)
     background-color: $main-color
 
-.hamburger.is-active .bar
+.hamburger_dark.is-active .bar_dark
     opacity: 0
 
 // MOBILE MENU
 .mobile__nav
-    display: block
     position: fixed
+    top: 0
+    left: 100%
+    display: block
+    width: 100%
     min-height: 100vh
     background-color: white
-    top: 0
-
-    width: 100%
     padding-top: 30px
-    overflow: hidden
-    transition: 0.4s
     z-index: 98
+    transition: 0.4s
+    overflow: hidden
     img
         margin-bottom: 8rem
     a
@@ -87,11 +86,8 @@ $secondary-color: #FFBA3A
         font-family: Montserrat
         font-style: normal
         font-weight: 500
-        font-size: 20px
+        font-size: 18px
         line-height: 22px
-        &:hover
-            background-color: $secondary-color
-            color: white
     p
         font-family: Montserrat
         font-style: normal
@@ -104,7 +100,3 @@ $secondary-color: #FFBA3A
 
 .mobile__nav.is-active
     left: 0
-
-.dark
-    background-color: $main-color
-    color: $main-color

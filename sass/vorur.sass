@@ -1,0 +1,55 @@
+//colors
+$main-color: #2c2c2c
+$secondary-color: #FFBA3A
+
+.menu
+    margin-top: 5rem
+    text-align: center
+    h1
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 30px
+        line-height: 36px
+        margin-bottom: 2rem
+    .menu__btns
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 20px
+
+        justify-items: center
+
+        margin-bottom: 5rem
+
+        @media only screen and (min-width: 768px)
+            max-width: 800px
+            margin: 0 auto
+            margin-bottom: 5rem
+            grid-template-columns: 1fr 1fr 1fr 1fr
+
+    button
+        border-radius: 4px
+        width: 160px
+        height: 34px
+        background-color: #FFEAC4
+        font-family: Montserrat
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 11px
+        padding: 10px
+        transition: 0.2s
+        &:focus
+            color: white
+            background-color: $secondary-color
+
+.products
+    display: grid
+    grid-gap: 40px
+    width: 280px
+    grid-template-columns: 1fr
+    margin: 0 auto
+    min-height: 550px
+    @media only screen and (min-width: 768px)
+        width: 940px
+        grid-template-columns: 1fr 1fr 1fr

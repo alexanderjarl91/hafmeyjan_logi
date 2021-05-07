@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hafmeyjan | Vörur</title>
+    <title>Hafmeyjan | Hafa samband</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
@@ -35,20 +35,41 @@
       <p>Hafmeyjan ehf 2021</p>
     </nav>
 
-    <!-- MENU -->
-    <div class="menu">
-      <h1 class="titill">VÖRUR</h1>
-      <div class="menu__btns">
-        <button autofocus onclick="renderAvocadoProducts()">Avocado</button>
-        <button onclick="renderFrozenProducts()">Frystivörur</button>
-        <button onclick="renderStockProducts()">Kraftar & sósur</button>
-        <button onclick="renderOtherProducts()">Annað</button>
-      </div>
-    </div>
+    <!-- CONTENT -->
+    <div class="hafasamband_container">
+      <h1>VIÐ VILJUM HEYRA FRÁ ÞÉR</h1>
+      <p>
+        Fyrirspurnir eða ábendingar eru alltaf vel þegnar. Þær hjálpa okkur að
+        koma til móts við viðskiptavini okkar og gera enn betur. Hvort sem það
+        snýr að vefsíðunni, þjónustu eða öðru – láttu það flakka.
+      </p>
 
-    <!-- PRODUCTS -->
-    <div class="products">
-      <!-- FILLED WITH JAVASCRIPT -->
+      <div class="form__container">
+        <form
+          action="https://formsubmit.co/alexanderjarl91@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_next" value="https://hafmeyjan.is" />
+          <input
+            type="hidden"
+            name="_subject"
+            value="Ný fyrirspurn af heimasíðu!"
+          />
+          <input type="name" name="nafn" placeholder="NAFN" required />
+          <input type="email" name="email" placeholder="NETFANG" required />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="SKILABOÐ"
+            maxlength="500"
+            required
+          ></textarea>
+          <button type="submit">Senda</button>
+        </form>
+        <img src="/images/Breaded_cauliflower_web.jpg" alt="" />
+      </div>
     </div>
 
     <!-- FOOTER -->
@@ -57,18 +78,16 @@
         <h1>HLEKKIR</h1>
         <ul>
           <li><a href="/vorur">Vörur</a></li>
-          <li><a href="/um-okkur.html">Um okkur</a></li>
+          <li><a href="/um-okkur">Um okkur</a></li>
           <li><a href="/hafa-samband">Hafa samband</a></li>
         </ul>
       </div>
-
       <div class="opnunartimi">
         <h1>OPNUNARTÍMI</h1>
         <p>Virka daga</p>
         <p>08:30 - 16:00</p>
       </div>
-
-      <div>
+      <div class="hafa_samband">
         <h1>HAFA SAMBAND</h1>
         <ul>
           <li>
@@ -85,13 +104,13 @@
           </li>
           <li>
             <img src="../images/location_icon.svg" alt="" /><a href=""
-              >Akralind 9, 201 Kópavogur</a
+              >Akralind 9, 203 Kópavogur</a
             >
           </li>
         </ul>
       </div>
     </footer>
-    <script src="../scripts/products.js"></script>
+
     <script src="../scripts/hamburger_dark.js"></script>
   </body>
 </html>

@@ -71,26 +71,35 @@ const renderOtherProducts = () => {
 
 const products = [
   // AVOCADO
+  {
+    title: "Avocado Dices",
+    weight: "800gr",
+    count: "12",
+    type: "avocado",
+    img: "https://i.ibb.co/0Y5nFzR/onionrings.png",
+  },
+  {
+    title: "Avocado Slices",
+    weight: "800gr",
+    count: "12",
+    type: "avocado",
+    img: "https://i.ibb.co/0Y5nFzR/onionrings.png",
+  },
+  {
+    title: "Western Guacamole",
+    weight: "500gr",
+    count: "20",
+    type: "avocado",
+    img: "https://i.ibb.co/0Y5nFzR/onionrings.png",
+  },
 
   // FROZEN
   {
-    title: "mozzarella",
+    title: "Salud Mozzarella Sticks",
     weight: "600gr",
     count: "12",
     type: "frozen",
-    img: "../images/mozzarella.svg",
-  },
-
-  // STOCK
-
-  // OTHER
-  {
-    title: "Nauta kraftur",
-    weight: "160gr",
-    count: "12",
-    type: "stock",
-    img:
-      "https://static.heimkaup.is/images/products/34/114434/cf793-tasty-raudvins-sosugrunnur-60-g_670x400.jpg",
+    img: "https://i.ibb.co/0Y5nFzR/onionrings.png",
   },
   {
     title: "Onion rings",
@@ -113,13 +122,18 @@ const products = [
     type: "frozen",
     img: "https://i.ibb.co/0Y5nFzR/onionrings.png",
   },
+
+  // STOCK
   {
-    title: "Avocado Dices",
-    weight: "800gr",
+    title: "Nauta kraftur",
+    weight: "160gr",
     count: "12",
-    type: "avocado",
-    img: "https://i.ibb.co/0Y5nFzR/onionrings.png",
+    type: "stock",
+    img:
+      "https://static.heimkaup.is/images/products/34/114434/cf793-tasty-raudvins-sosugrunnur-60-g_670x400.jpg",
   },
+
+  // OTHER
   {
     title: "Þvottaklemmur",
     weight: "800gr",
@@ -129,6 +143,13 @@ const products = [
   },
   {
     title: "Tannstönglar",
+    weight: "100gr",
+    count: "100",
+    type: "other",
+    img: "https://i.ibb.co/ygdrfNw/or.png",
+  },
+  {
+    title: "Grillpinnar 25cm",
     weight: "100gr",
     count: "100",
     type: "other",

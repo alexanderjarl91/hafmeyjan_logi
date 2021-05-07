@@ -2,6 +2,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  min-height: 780px;
 }
 
 .img_container {
@@ -214,10 +215,6 @@ a {
   font-size: 20px;
   line-height: 22px;
 }
-.mobile__nav a:hover {
-  background-color: #FFBA3A;
-  color: white;
-}
 .mobile__nav p {
   font-family: Montserrat;
   font-style: normal;
@@ -236,6 +233,11 @@ a {
 .dark {
   background-color: #2c2c2c;
   color: #2c2c2c;
+}
+
+.link-hover:hover {
+  background-color: #FFBA3A;
+  color: white;
 }
 
 footer {
@@ -327,10 +329,10 @@ footer a, footer p, footer li {
 }
 @media only screen and (min-width: 768px) {
   .menu .menu__btns {
-    max-width: 800px;
+    max-width: 880px;
     margin: 0 auto;
     margin-bottom: 5rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 .menu button {
@@ -340,7 +342,7 @@ footer a, footer p, footer li {
   background-color: #FFEAC4;
   font-family: Montserrat;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 11px;
   padding: 10px;
@@ -375,6 +377,7 @@ footer a, footer p, footer li {
   height: 350px;
   text-align: center;
   border-radius: 5px;
+  animation: fadeIn 0.5s;
 }
 .product img {
   margin: 0 auto;
@@ -398,6 +401,14 @@ footer a, footer p, footer li {
   margin: 5px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .logo {
   width: 180px;
   margin-left: -1rem;
@@ -518,6 +529,9 @@ footer a, footer p, footer li {
   left: 0;
 }
 
+.hafasamband_container {
+  margin: 5rem 0;
+}
 .hafasamband_container h1 {
   font-family: Montserrat;
   font-style: normal;
@@ -618,6 +632,42 @@ form button {
   margin-bottom: 2rem;
 }
 
+.takk_container {
+  margin: 14rem 0;
+  min-height: 370px;
+}
+.takk_container h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .takk_container h1 {
+    text-align: center;
+  }
+}
+.takk_container p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 34px;
+  letter-spacing: 0.05em;
+  max-width: 280px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .takk_container p {
+    max-width: 600px;
+  }
+}
+
 header {
   background-image: url(../hero.jpg);
   -webkit-background-size: cover;
@@ -706,6 +756,7 @@ header {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 2rem;
   margin-bottom: 5rem;
 }
 .service div {
@@ -781,6 +832,9 @@ header {
   transform: scale(1.01);
 }
 
+.list {
+  background-color: #FAFAFA;
+}
 @media only screen and (min-width: 768px) {
   .list {
     margin: 0 auto;
@@ -790,6 +844,7 @@ header {
   .list {
     display: flex;
     justify-content: space-around;
+    padding: 4rem 0;
   }
 }
 .list div {
@@ -828,6 +883,19 @@ header {
   color: #2c2c2c;
   width: 300px;
   margin: 0 auto;
+}
+
+.hero-title {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

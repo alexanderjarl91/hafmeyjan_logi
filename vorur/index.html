@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hafmeyjan | Vörur</title>
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="shortcut icon" type="image/png" href="../images/logo_icon.png" />
   </head>
   <body>
     <!-- NAVBAR -->
@@ -28,10 +29,10 @@
       <a href="">
         <img class="logo" src="../images/logo_dark.svg" alt="" />
       </a>
-      <a href="/">FORSÍÐA</a>
-      <a href="/vorur">VÖRUR</a>
-      <a href="/um-okkur">UM OKKUR</a>
-      <a href="/hafa-samband">HAFA SAMBAND</a>
+      <a class="link-hover" href="/">FORSÍÐA</a>
+      <a class="link-hover" href="/vorur">VÖRUR</a>
+      <a class="link-hover" href="/um-okkur">UM OKKUR</a>
+      <a class="link-hover" href="/hafa-samband">HAFA SAMBAND</a>
       <p>Hafmeyjan ehf 2021</p>
     </nav>
 
@@ -39,7 +40,8 @@
     <div class="menu">
       <h1 class="titill">VÖRUR</h1>
       <div class="menu__btns">
-        <button autofocus onclick="renderAvocadoProducts()">Avocado</button>
+        <button autofocus onclick="renderAllProducts()">Allar vörur</button>
+        <button onclick="renderAvocadoProducts()">Avocado</button>
         <button onclick="renderFrozenProducts()">Frystivörur</button>
         <button onclick="renderStockProducts()">Kraftar & sósur</button>
         <button onclick="renderOtherProducts()">Annað</button>
@@ -68,7 +70,7 @@
         <p>08:30 - 16:00</p>
       </div>
 
-      <div>
+      <div class="hafa_samband">
         <h1>HAFA SAMBAND</h1>
         <ul>
           <li>

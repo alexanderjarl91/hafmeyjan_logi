@@ -5,6 +5,20 @@ const clearProducts = () => {
   productsDOM.innerHTML = "";
 };
 
+// fill dom with all products
+const renderAllProducts = () => {
+  clearProducts();
+  products.map((item) => {
+    productsDOM.innerHTML += `
+      <div class="product">
+      <img src="${item.img}" alt=""/>
+       <h2>${item.title}</h2>
+       <p>Þyngd: ${item.weight}</p>
+       <p>Fjöldi: ${item.count}<p>
+      </div>`;
+  });
+};
+
 // fill dom with frozen products
 const renderFrozenProducts = () => {
   clearProducts();

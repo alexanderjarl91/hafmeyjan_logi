@@ -357,6 +357,13 @@ const products = [
     img: "../images/products/kraftar-sosur-kalkkunasosugrunnur.png",
   },
   {
+    title: "Anda- og gæsasósugrunnur",
+    weight: "60gr",
+    count: "12",
+    type: "stock",
+    img: "../images/products/kraftar-sosur-kalkkunasosugrunnur.png",
+  },
+  {
     title: "Lambasósugrunnur",
     weight: "60gr",
     count: "12",
@@ -407,13 +414,6 @@ const products = [
   },
   {
     title: "Fljótandi Kalkúnakraftur",
-    weight: "160gr",
-    count: "12",
-    type: "stock",
-    img: "../images/products/kraftar-sosur-kalkunakr.jpg",
-  },
-  {
-    title: "Fljótandi Villibráðakraftur",
     weight: "160gr",
     count: "12",
     type: "stock",
@@ -493,15 +493,15 @@ const products = [
   },
   {
     title: "Tannstönglar",
-    weight: "100gr",
-    count: "100",
+    weight: "200stk",
+    count: "24",
     type: "other",
     img: "../images/products/annad-0001 tannstönglar.png",
   },
   {
     title: "Tannstönglar með skammtara",
-    weight: "100gr",
-    count: "100",
+    weight: "200stk",
+    count: "24",
     type: "other",
     img: "../images/products/annad-1045-tannstonglar.png",
   },

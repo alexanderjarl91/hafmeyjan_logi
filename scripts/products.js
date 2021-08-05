@@ -361,7 +361,7 @@ const products = [
     weight: "60gr",
     count: "12",
     type: "stock",
-    img: "../images/products/kraftar-sosur-kalkkunasosugrunnur.png",
+    img: "../images/products/kraftar-sosur-andaoggaesa.jpg",
   },
   {
     title: "Lambasósugrunnur",
@@ -420,11 +420,11 @@ const products = [
     img: "../images/products/kraftar-sosur-kalkunakr.jpg",
   },
   {
-    title: "Fljótandi Anda- og gæsakraftur",
+    title: "Fljótandi Andakraftur",
     weight: "160gr",
     count: "12",
     type: "stock",
-    img: "../images/products/kraftar-sosur-kalkunakr.jpg",
+    img: "../images/products/kraftar-sosur-andakraftur.jpg",
   },
   {
     title: "Fljótandi Grænmetiskraftur",
